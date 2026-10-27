@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Titik Kumpul Cikarang Barat - Premium Home-Style Culinary</title>
+    <title>Cafe Titik Kumpul Cikarang Barat & MM2100 | Makan Siang & Katering Harian Kantor</title>
     
     <!-- SEO & METADATA -->
-    <meta name="description" content="Solusi makan siang praktis, lezat, dan hemat di Cikarang Barat. Nikmati Ayam Katsu, Ayam Cabe Ijo, Mie Nyemek rumahan lezat tanpa ongkir mahal. Pesan via WhatsApp!">
-    <meta name="keywords" content="Makan siang Cikarang Barat, Ayam Katsu Cikarang, Ayam Cabe Ijo, Mei Nyemek, Katering harian kantor, Kuliner murah Cikarang, Cafe Titik Kumpul">
+    <meta name="description" content="Solusi makan siang praktis & katering harian di Cikarang Barat & Kawasan Industri MM2100. Nikmati Ayam Katsu Cabe Ijo, Ayam Geprek, & Mie Nyemek rumahan lezat tanpa ongkir mahal. Pesan via WA!">
+    <meta name="keywords" content="Makan siang Cikarang Barat, Catering harian MM2100, Katering kantor MM2100 Cikarang, Ayam Katsu Cikarang, Ayam Cabe Ijo, Mie Nyemek, Kuliner murah Cikarang, Cafe Titik Kumpul Gandamekar">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cafetitikkumpul.com/">
     
     <!-- GEO & LOCAL SEO METADATA -->
     <meta name="geo.region" content="ID-JB">
-    <meta name="geo.placename" content="Cikarang Barat, Kabupaten Bekasi">
+    <meta name="geo.placename" content="Cikarang Barat, Kawasan Industri MM2100, Kabupaten Bekasi">
     <meta name="geo.position" content="-6.2651;107.1325">
     <meta name="ICBM" content="-6.2651, 107.1325">
     
     <!-- OPEN GRAPH (OG) & TWITTER CARDS -->
     <meta property="og:locale" content="id_ID">
     <meta property="og:type" content="restaurant">
-    <meta property="og:title" content="Cafe Titik Kumpul - Makan Siang Praktis & Nikmat">
-    <meta property="og:description" content="Solusi makan siang hemat & nikmat di Cikarang Barat. Masakan rumahan berkualitas siap antar.">
+    <meta property="og:title" content="Cafe Titik Kumpul - Makan Siang & Katering Kantor MM2100">
+    <meta property="og:description" content="Solusi makan siang hemat & katering harian kantor di Cikarang Barat & Kawasan Industri MM2100. Masakan rumahan berkualitas siap antar.">
     <meta property="og:url" content="https://cafetitikkumpul.com/">
     <meta property="og:site_name" content="Cafe Titik Kumpul">
     <meta property="og:image" content="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=80">
@@ -81,6 +81,7 @@
           "telephone": "+6285134961663",
           "priceRange": "Rp 15.000 - Rp 30.000",
           "servesCuisine": ["Indonesian", "Home-Style", "Local Comfort Food"],
+          "areaServed": ["Cikarang Barat", "Kawasan Industri MM2100", "Gandamekar"],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Jl. Djasip RT 04 RW 002, Kp. Rawajulang, Desa Gandamekar",
@@ -107,10 +108,6 @@
         }
         .burgundy-gradient {
             background: linear-gradient(135deg, #420B17 0%, #7F2033 50%, #5C1423 100%);
-        }
-        .burgundy-glass {
-            background: rgba(66, 11, 23, 0.85);
-            backdrop-filter: blur(12px);
         }
         .card-shadow {
             box-shadow: 0 10px 30px -5px rgba(66, 11, 23, 0.08);
@@ -139,6 +136,11 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #7F2033;
         }
+        /* Indicator Bullet Active Style */
+        .slider-bullet.active {
+            width: 1.75rem !important;
+            background-color: #F3C562 !important;
+        }
     </style>
 </head>
 <body class="bg-cream text-stone-800 font-sans antialiased selection:bg-burgundy-800 selection:text-white">
@@ -157,7 +159,7 @@
                         </div>
                         <div class="flex flex-col">
                             <span class="font-black text-burgundy-950 text-xl tracking-tight leading-tight group-hover:text-burgundy-700 transition-colors">Titik Kumpul</span>
-                            <span class="text-[10px] text-burgundy-700/80 font-bold uppercase tracking-widest">Cafe & Culinary</span>
+                            <span class="text-[10px] text-burgundy-700/80 font-bold uppercase tracking-widest">Cafe & Culinary MM2100</span>
                         </div>
                     </a>
 
@@ -175,6 +177,12 @@
 
                     <!-- Actions Buttons -->
                     <div class="flex items-center gap-3">
+                        <!-- Header WhatsApp Button Premium Burgundy -->
+                        <a href="https://wa.me/6285134961663?text=Halo%20Cafe%20Titik%20Kumpul,%20saya%20mau%20tanya%20menu%20dan%20katering%20MM2100!" target="_blank" class="burgundy-gradient hover:bg-burgundy-900 text-white px-4 py-2.5 rounded-2xl font-bold text-sm transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 border border-gold-500/30">
+                            <i class="fa-brands fa-whatsapp text-lg text-gold-400"></i>
+                            <span class="hidden sm:inline">WhatsApp</span>
+                        </a>
+
                         <!-- Cart Trigger Button -->
                         <button id="open-cart-btn" onclick="toggleCartDrawer()" class="bg-burgundy-800 hover:bg-burgundy-900 text-white px-4 py-2.5 rounded-2xl font-bold text-sm transition-all duration-300 flex items-center gap-2.5 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 border border-burgundy-700">
                             <i class="fa-solid fa-bag-shopping text-gold-400"></i>
@@ -218,27 +226,27 @@
                             
                             <div class="inline-flex items-center gap-2 bg-burgundy-100 border border-burgundy-300/60 text-burgundy-900 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-xs">
                                 <i class="fa-solid fa-crown text-gold-500"></i>
-                                Kuliner Rumahan Premium Cikarang Barat
+                                Kuliner & Katering Harian Cikarang Barat & Area MM2100
                             </div>
 
                             <!-- Target Persona Dynamic Tabs Switcher -->
                             <div class="pt-2">
                                 <div class="text-xs font-extrabold text-burgundy-800 uppercase tracking-widest mb-2.5">Pilih Situasi Makan Siang Anda:</div>
                                 <div class="flex flex-wrap justify-center lg:justify-start gap-2" id="behaviour-tabs">
-                                    <button onclick="switchBehaviour('karyawan')" class="tab-btn active text-xs font-bold px-4 py-2.5 rounded-xl border-2 border-burgundy-800 bg-burgundy-800 text-white transition-all duration-200 shadow-md">👨‍💼 Karyawan Kantoran</button>
-                                    <button onclick="switchBehaviour('anak-kos')" class="tab-btn text-xs font-bold px-4 py-2.5 rounded-xl border-2 border-stone-200 bg-white text-stone-700 hover:border-burgundy-300 transition-all duration-200">🎓 Anak Kos</button>
+                                    <button onclick="switchBehaviour('karyawan')" class="tab-btn active text-xs font-bold px-4 py-2.5 rounded-xl border-2 border-burgundy-800 bg-burgundy-800 text-white transition-all duration-200 shadow-md">👨‍💼 Karyawan MM2100 & Kantor</button>
+                                    <button onclick="switchBehaviour('anak-kos')" class="tab-btn text-xs font-bold px-4 py-2.5 rounded-xl border-2 border-stone-200 bg-white text-stone-700 hover:border-burgundy-300 transition-all duration-200">🎓 Anak Kos & Warga Lokal</button>
                                     <button onclick="switchBehaviour('ibu-rumah-tangga')" class="tab-btn text-xs font-bold px-4 py-2.5 rounded-xl border-2 border-stone-200 bg-white text-stone-700 hover:border-burgundy-300 transition-all duration-200">🏠 Orang Tua Sibuk</button>
-                                    <button onclick="switchBehaviour('pemburu-diskon')" class="tab-btn text-xs font-bold px-4 py-2.5 rounded-xl border-2 border-stone-200 bg-white text-stone-700 hover:border-burgundy-300 transition-all duration-200">💰 Cari Paket Hemat</button>
+                                    <button onclick="switchBehaviour('pemburu-diskon')" class="tab-btn text-xs font-bold px-4 py-2.5 rounded-xl border-2 border-stone-200 bg-white text-stone-700 hover:border-burgundy-300 transition-all duration-200">💰 Cari Paket Katering Hemat</button>
                                 </div>
                             </div>
 
                             <!-- Dynamic Headline Container -->
                             <div class="min-h-[140px] flex flex-col justify-center transition-all duration-300">
                                 <h1 id="hero-headline" class="text-3xl sm:text-4xl lg:text-5xl font-black text-burgundy-950 tracking-tight leading-tight">
-                                    Bingung Mau Makan Siang Apa Lagi Hari Ini?
+                                    Solusi Makan Siang & Katering Praktis di MM2100 Cikarang
                                 </h1>
                                 <p id="hero-subheadline" class="text-stone-600 text-base sm:text-lg mt-3 font-normal leading-relaxed">
-                                    Stop pusing mikirin menu dan ongkir mahal ojek online. Nikmati masakan rumahan lezat, praktis, dan diantar tepat waktu langsung ke tempat Anda!
+                                    Stop pusing mikirin menu dan ongkir mahal ojek online di kawasan MM2100. Nikmati masakan rumahan lezat, higienis, dan diantar tepat waktu langsung ke kantor/pabrik Anda!
                                 </p>
                             </div>
 
@@ -249,7 +257,7 @@
                                     <i class="fa-solid fa-arrow-right text-gold-400"></i>
                                 </a>
                                 <a href="#calculator" class="w-full sm:w-auto border-2 border-burgundy-900/20 bg-white hover:bg-burgundy-50 text-burgundy-950 font-extrabold px-6 py-4 rounded-2xl text-sm transition-all duration-200 text-center shadow-xs">
-                                    🧮 Hitung Hemat Bulanan
+                                    🧮 Hitung Hemat Katering Kantor
                                 </a>
                             </div>
 
@@ -261,7 +269,7 @@
                                 </div>
                                 <div class="p-2 rounded-xl bg-white/60 border border-burgundy-900/5">
                                     <span class="block text-xl font-black text-burgundy-900">Bebas Ongkir</span>
-                                    <span class="text-xs text-stone-600 font-bold">Area Cikarang Barat</span>
+                                    <span class="text-xs text-stone-600 font-bold">Cikarang Barat & MM2100</span>
                                 </div>
                                 <div class="p-2 rounded-xl bg-white/60 border border-burgundy-900/5">
                                     <span class="block text-xl font-black text-burgundy-900">4.9 ★★★★★</span>
@@ -271,17 +279,79 @@
 
                         </div>
 
-                        <!-- Right Hero Image Showcase -->
+                        <!-- Right Hero Image Showcase Slider Carousel -->
                         <div class="lg:col-span-5 relative">
-                            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
-                                <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=80" alt="Ayam Katsu Sambal Cabe Ijo Cafe Titik Kumpul" class="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-500">
-                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-burgundy-950 via-burgundy-950/70 to-transparent p-6 text-white">
-                                    <span class="bg-gold-400 text-burgundy-950 font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
-                                        🔥 Best Seller #1
-                                    </span>
-                                    <h3 class="text-2xl font-black mt-2 text-white">Ayam Katsu Cabe Ijo</h3>
-                                    <p class="text-xs text-burgundy-100 mt-1 leading-relaxed">Fillet ayam krispi renyah + sambal ijo rumahan dengan racikan rempah pedas mantap.</p>
+                            <div id="hero-slider-container" class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group h-[440px] bg-stone-900" onmouseenter="pauseHeroSlider()" onmouseleave="startHeroSlider()">
+                                
+                                <!-- Slider Track / Wrapper -->
+                                <div id="hero-slider-track" class="w-full h-full flex transition-transform duration-700 ease-out">
+                                    
+                                    <!-- Slide 1 -->
+                                    <div class="w-full h-full shrink-0 relative">
+                                        <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=80" alt="Ayam Katsu Sambal Cabe Ijo Cafe Titik Kumpul Cikarang MM2100" class="w-full h-full object-cover">
+                                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-burgundy-950 via-burgundy-950/70 to-transparent p-6 text-white pt-16">
+                                            <span class="bg-gold-400 text-burgundy-950 font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                                🔥 Best Seller #1 MM2100
+                                            </span>
+                                            <h3 class="text-2xl font-black mt-2 text-white">Ayam Katsu Cabe Ijo</h3>
+                                            <p class="text-xs text-burgundy-100 mt-1 leading-relaxed">Fillet ayam krispi renyah + sambal ijo rumahan dengan racikan rempah pedas mantap.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 2 -->
+                                    <div class="w-full h-full shrink-0 relative">
+                                        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=900&q=80" alt="Ayam Geprek Extra Pedas Cikarang Barat" class="w-full h-full object-cover">
+                                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-burgundy-950 via-burgundy-950/70 to-transparent p-6 text-white pt-16">
+                                            <span class="bg-red-500 text-white font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                                🌶️ Best Seller #2
+                                            </span>
+                                            <h3 class="text-2xl font-black mt-2 text-white">Ayam Geprek Pedas Mantap</h3>
+                                            <p class="text-xs text-burgundy-100 mt-1 leading-relaxed">Daging ayam krispi renyah bertabur sambal geprek segar racikan bumbu pilihan.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 3 -->
+                                    <div class="w-full h-full shrink-0 relative">
+                                        <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=900&q=80" alt="Mie Nyemek Titik Kumpul" class="w-full h-full object-cover">
+                                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-burgundy-950 via-burgundy-950/70 to-transparent p-6 text-white pt-16">
+                                            <span class="bg-amber-500 text-burgundy-950 font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                                🍲 Comfort Food
+                                            </span>
+                                            <h3 class="text-2xl font-black mt-2 text-white">Mie Nyemek Titik Kumpul</h3>
+                                            <p class="text-xs text-burgundy-100 mt-1 leading-relaxed">Mie kuah kental gurih khas rumahan kaya rempah bertabur topping lezat mengenyangkan.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 4 -->
+                                    <div class="w-full h-full shrink-0 relative">
+                                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=80" alt="Es Cemil & Drinks" class="w-full h-full object-cover">
+                                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-burgundy-950 via-burgundy-950/70 to-transparent p-6 text-white pt-16">
+                                            <span class="bg-cyan-400 text-burgundy-950 font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                                🍹 Segar & Penutup
+                                            </span>
+                                            <h3 class="text-2xl font-black mt-2 text-white">Es Cemil & Minuman Segar</h3>
+                                            <p class="text-xs text-burgundy-100 mt-1 leading-relaxed">Penutup manis nan segar pelengkap santap makan siang sempurna Anda.</p>
+                                        </div>
+                                    </div>
+
                                 </div>
+
+                                <!-- Slider Nav Buttons (Prev & Next) -->
+                                <button onclick="prevHeroSlide()" aria-label="Slide Sebelumnya" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-burgundy-950/60 hover:bg-burgundy-900 text-white flex items-center justify-center backdrop-blur-md opacity-80 hover:opacity-100 transition-all border border-white/20 shadow-md">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button onclick="nextHeroSlide()" aria-label="Slide Selanjutnya" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-burgundy-950/60 hover:bg-burgundy-900 text-white flex items-center justify-center backdrop-blur-md opacity-80 hover:opacity-100 transition-all border border-white/20 shadow-md">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+                                <!-- Slider Pagination Dots/Bullets -->
+                                <div class="absolute top-4 right-4 flex items-center gap-1.5 z-20 bg-burgundy-950/40 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10" id="hero-dots-container">
+                                    <button onclick="goToHeroSlide(0)" class="slider-bullet active w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all duration-300"></button>
+                                    <button onclick="goToHeroSlide(1)" class="slider-bullet w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all duration-300"></button>
+                                    <button onclick="goToHeroSlide(2)" class="slider-bullet w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all duration-300"></button>
+                                    <button onclick="goToHeroSlide(3)" class="slider-bullet w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-all duration-300"></button>
+                                </div>
+
                             </div>
                         </div>
 
@@ -336,7 +406,7 @@
                             
                             <!-- Large Product Image Showcase -->
                             <div class="relative rounded-3xl overflow-hidden border border-stone-200 shadow-sm bg-stone-100">
-                                <img id="custom-prod-img" src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1000&q=80" alt="Detail Produk Cafe Titik Kumpul" class="w-full h-80 sm:h-[400px] object-cover transition-all duration-300">
+                                <img id="custom-prod-img" src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1000&q=80" alt="Detail Produk Cafe Titik Kumpul MM2100" class="w-full h-80 sm:h-[400px] object-cover transition-all duration-300">
                             </div>
 
                             <!-- Product Info Header -->
@@ -346,7 +416,7 @@
                                 <div class="flex flex-wrap items-center gap-2 text-xs text-stone-500 font-semibold">
                                     <span class="text-gold-500 flex items-center gap-1 font-bold">★ 4.9</span>
                                     <span>•</span>
-                                    <span>Menu Favorit UMKM & Perkantoran</span>
+                                    <span>Favorit Karyawan MM2100 & Perkantoran</span>
                                     <span>•</span>
                                     <span>Bisa konsultasi spesifikasi porsi</span>
                                 </div>
@@ -358,24 +428,24 @@
                                 </div>
 
                                 <p class="text-stone-600 text-sm pt-2 leading-relaxed">
-                                    Pilihan utama untuk makan siang hemat & gurih. Dibuat dari daging fillet ayam segar berkualitas dengan baluran tepung krispi, disajikan hangat lengkap dengan racikan sambal cabe ijo khas rumahan.
+                                    Pilihan utama untuk makan siang hemat & gurih. Dibuat dari daging fillet ayam segar berkualitas dengan baluran tepung krispi, disajikan hangat lengkap dengan racikan sambal cabe ijo khas rumahan. Siap diantar ke kantor & pabrik area MM2100 Cikarang Barat.
                                 </p>
                             </div>
 
                             <!-- Option Selector 1: Varian Sambal -->
                             <div class="space-y-2.5 pt-2 border-t border-stone-200">
                                 <label class="block text-xs font-black text-stone-900 uppercase tracking-wider">
-                                    Pilih varian sambal: <span id="selected-variant-label" class="text-burgundy-800 font-bold">Cabe Ijo Rumahan</span>
+                                    Pilih varian sambal: <span id="selected-variant-label" class="text-burgundy-800 font-bold">Sambal Cabe Ijo Rumahan</span>
                                 </label>
                                 <div class="flex flex-wrap gap-2.5">
-                                    <button type="button" onclick="selectVariant(this, 'Cabe Ijo Rumahan', 18000, 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=80')" class="variant-opt-btn active border-2 border-burgundy-900 bg-burgundy-50 text-burgundy-900 font-bold text-xs sm:text-sm px-5 py-2.5 rounded-2xl transition-all shadow-xs">
-                                        🌶️ Cabe Ijo Rumahan
+                                    <button type="button" onclick="selectVariant(this, 'Sambal Cabe Ijo Rumahan', 18000, 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=80')" class="variant-opt-btn active border-2 border-burgundy-900 bg-burgundy-50 text-burgundy-900 font-bold text-xs sm:text-sm px-5 py-2.5 rounded-2xl transition-all shadow-xs">
+                                        🌶️ Sambal Cabe Ijo Rumahan
                                     </button>
-                                    <button type="button" onclick="selectVariant(this, 'Geprek Extra Pedas', 19000, 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=900&q=80')" class="variant-opt-btn border-2 border-stone-200 bg-white hover:border-burgundy-300 text-stone-700 font-medium text-xs sm:text-sm px-5 py-2.5 rounded-2xl transition-all">
-                                        🔥 Geprek Extra Pedas
+                                    <button type="button" onclick="selectVariant(this, 'Sambal Ijo Extra Pedas', 19000, 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80')" class="variant-opt-btn border-2 border-stone-200 bg-white hover:border-burgundy-300 text-stone-700 font-medium text-xs sm:text-sm px-5 py-2.5 rounded-2xl transition-all">
+                                        🔥 Sambal Ijo Extra Pedas
                                     </button>
-                                    <button type="button" onclick="selectVariant(this, 'Mayonnaise Creamy', 18000, 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=80')" class="variant-opt-btn border-2 border-stone-200 bg-white hover:border-burgundy-300 text-stone-700 font-medium text-xs sm:text-sm px-5 py-2.5 rounded-2xl transition-all">
-                                        🥗 Mayonnaise Creamy
+                                    <button type="button" onclick="selectVariant(this, 'Sambal Ijo Mayonnaise', 19000, 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=80')" class="variant-opt-btn border-2 border-stone-200 bg-white hover:border-burgundy-300 text-stone-700 font-medium text-xs sm:text-sm px-5 py-2.5 rounded-2xl transition-all">
+                                        🥗 Sambal Ijo Mayonnaise
                                     </button>
                                 </div>
                             </div>
@@ -402,13 +472,13 @@
                             <div class="pt-6 border-t border-stone-200">
                                 <div class="flex gap-8 border-b border-stone-200 text-sm font-bold pb-2">
                                     <button onclick="switchProductTab('detail')" id="tab-btn-detail" class="text-burgundy-900 border-b-2 border-burgundy-900 pb-2 transition-colors font-bold">Detail Produk</button>
-                                    <button onclick="switchProductTab('panduan')" id="tab-btn-panduan" class="text-stone-500 hover:text-stone-900 pb-2 transition-colors">Panduan</button>
+                                    <button onclick="switchProductTab('panduan')" id="tab-btn-panduan" class="text-stone-500 hover:text-stone-900 pb-2 transition-colors">Panduan Delivery</button>
                                     <button onclick="switchProductTab('info')" id="tab-btn-info" class="text-stone-500 hover:text-stone-900 pb-2 transition-colors">Info Penting</button>
                                 </div>
                                 <div id="tab-content-area" class="py-4 text-xs text-stone-600 leading-relaxed space-y-2">
                                     <p>• Daging fillet ayam dipotong & dimarinasi segar harian (tanpa pengawet).</p>
                                     <p>• Disajikan dengan nasi hangat dan kemasan higienis tahan panas.</p>
-                                    <p>• Cocok untuk konsumsi harian pribadi, katering seminar, maupun konsumsi rapat kantor.</p>
+                                    <p>• Cocok untuk konsumsi harian pribadi, katering seminar, maupun konsumsi rapat kantor/pabrik MM2100.</p>
                                 </div>
                             </div>
 
@@ -430,13 +500,13 @@
                                         <span id="custom-qty-display" class="w-10 text-center font-bold text-stone-900 text-sm">1</span>
                                         <button onclick="changeCustomQty(1)" class="w-10 h-10 flex items-center justify-center text-stone-600 hover:bg-stone-100 font-bold transition-colors text-base">+</button>
                                     </div>
-                                    <span class="text-xs text-stone-500 font-medium">Bisa pesan custom</span>
+                                    <span class="text-xs text-stone-500 font-medium">Bisa pesan katering kantor</span>
                                 </div>
 
                                 <!-- Catatan Pesanan Box -->
                                 <div class="space-y-1.5">
                                     <label for="custom-order-notes" class="block text-xs font-bold text-stone-700">Catatan pesanan</label>
-                                    <textarea id="custom-order-notes" rows="3" placeholder="Contoh: Sambal dipisah, sendok plastik, kirim jam 11:45 WIB" class="w-full bg-white border border-stone-300 rounded-xl p-3 text-xs text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-1 focus:ring-burgundy-800 focus:border-burgundy-800 resize-none"></textarea>
+                                    <textarea id="custom-order-notes" rows="3" placeholder="Contoh: Kirim ke PT ABC Kawasan MM2100 Blok C, jam 11:45 WIB, sambal dipisah" class="w-full bg-white border border-stone-300 rounded-xl p-3 text-xs text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-1 focus:ring-burgundy-800 focus:border-burgundy-800 resize-none"></textarea>
                                 </div>
 
                                 <!-- Subtotal Display -->
@@ -460,7 +530,7 @@
 
                                 <!-- Footer Caption -->
                                 <p class="text-[11px] text-stone-400 leading-relaxed text-center">
-                                    Harga simulasi, belum termasuk ongkir atau penyesuaian khusus. Konfirmasi langsung saat pembayaran.
+                                    Harga simulasi. Pengantaran area MM2100 & Gandamekar bebas biaya pengantaran.
                                 </p>
 
                             </div>
@@ -477,13 +547,13 @@
                         
                         <div class="lg:col-span-6 space-y-6">
                             <span class="bg-gold-400 text-burgundy-950 text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
-                                🧮 Simulasi Penghematan
+                                🧮 Simulasi Penghematan Katering
                             </span>
                             <h2 class="text-3xl sm:text-4xl font-black leading-tight text-white">
-                                Berapa Banyak Uang yang Bisa Anda Hemat Tiap Bulan?
+                                Berapa Hemat Katering Kantor / Pabrik Anda di MM2100?
                             </h2>
                             <p class="text-burgundy-100 text-sm sm:text-base leading-relaxed">
-                                Biaya tersembunyi seperti ongkos kirim aplikasi ojek online & biaya layanan harian seringkali membengkak tanpa disadari. Bandingkan langsung penghematan Anda bersama Cafe Titik Kumpul!
+                                Biaya tersembunyi seperti ongkos kirim aplikasi ojek online & fee harian membuat pengeluaran makan siang kantor membengkak. Bandingkan penghematan langsung bersama Cafe Titik Kumpul!
                             </p>
 
                             <div class="space-y-4 pt-2">
@@ -491,14 +561,14 @@
                                     <div class="w-8 h-8 rounded-full bg-gold-400/20 text-gold-400 flex items-center justify-center shrink-0 font-bold">1</div>
                                     <div>
                                         <h4 class="font-bold text-white text-sm">Tanpa Biaya Layanan Aplikasi</h4>
-                                        <p class="text-xs text-burgundy-200">Harga menu jujur dan transparan tanpa markup berlebihan.</p>
+                                        <p class="text-xs text-burgundy-200">Harga menu jujur dan transparan tanpa markup aplikasi.</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start gap-3">
                                     <div class="w-8 h-8 rounded-full bg-gold-400/20 text-gold-400 flex items-center justify-center shrink-0 font-bold">2</div>
                                     <div>
-                                        <h4 class="font-bold text-white text-sm">Bebas Ongkir Pengantaran Langsung</h4>
-                                        <p class="text-xs text-burgundy-200">Pengantaran kolektif jam makan siang tanpa biaya kirim per porsi.</p>
+                                        <h4 class="font-bold text-white text-sm">Bebas Ongkir Pengantaran MM2100</h4>
+                                        <p class="text-xs text-burgundy-200">Pengantaran langsung ke gate/lobby kantor/pabrik tanpa biaya kirim per porsi.</p>
                                     </div>
                                 </div>
                             </div>
@@ -509,7 +579,7 @@
                             <div class="bg-white/10 backdrop-blur-md border border-white/15 p-6 sm:p-8 rounded-3xl shadow-2xl space-y-6">
                                 <h3 class="text-xl font-black text-white flex items-center gap-2">
                                     <i class="fa-solid fa-calculator text-gold-400"></i>
-                                    <span>Kalkulator Makan Siang Kantor</span>
+                                    <span>Kalkulator Katering MM2100 & Kantor</span>
                                 </h3>
 
                                 <div class="space-y-4">
@@ -547,7 +617,7 @@
 
                                 <button onclick="orderKateringCalc()" class="w-full bg-gold-400 hover:bg-gold-500 text-burgundy-950 font-black py-4 rounded-2xl text-sm shadow-xl transition-all duration-200 flex items-center justify-center gap-2">
                                     <i class="fa-brands fa-whatsapp text-xl"></i>
-                                    <span>Konsultasi Paket Katering Kantor Hemat</span>
+                                    <span>Konsultasi Katering Kantor MM2100</span>
                                 </button>
                             </div>
                         </div>
@@ -565,7 +635,7 @@
                             Testimoni Pelanggan
                         </span>
                         <h2 class="text-3xl sm:text-4xl font-black text-burgundy-950 mt-3">Kata Mereka yang Sudah Mencoba</h2>
-                        <p class="text-stone-600 text-sm mt-2">Kepuasan rasa dan ketepatan waktu pengantaran adalah prioritas utama kami.</p>
+                        <p class="text-stone-600 text-sm mt-2">Kepuasan rasa dan ketepatan waktu pengantaran ke area MM2100 adalah prioritas kami.</p>
                     </div>
 
                     <div class="grid md:grid-cols-3 gap-8">
@@ -574,13 +644,13 @@
                                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             </div>
                             <p class="text-xs text-stone-700 leading-relaxed italic">
-                                "Menu Ayam Katsu Cabe Ijonya juara banget! Dagingnya tebel, gurih, dan pedasnya pas. Buat langganan makan siang kantor sangat direkomendasikan karena tepat waktu."
+                                "Menu Ayam Katsu Cabe Ijonya juara banget! Buat katering harian tim kantor kami di MM2100 sangat direkomendasikan karena selalu hangat dan tepat waktu."
                             </p>
                             <div class="flex items-center gap-3 pt-2 border-t border-stone-200/60">
                                 <div class="w-9 h-9 rounded-full bg-burgundy-800 text-gold-400 font-black text-xs flex items-center justify-center">RH</div>
                                 <div>
                                     <h4 class="font-bold text-stone-900 text-xs">Rina Herlina</h4>
-                                    <span class="text-[10px] text-stone-500">Staff Admin - Cikarang Barat</span>
+                                    <span class="text-[10px] text-stone-500">Staff GA - Perusahaan MM2100</span>
                                 </div>
                             </div>
                         </div>
@@ -590,13 +660,13 @@
                                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             </div>
                             <p class="text-xs text-stone-700 leading-relaxed italic">
-                                "Sebagai anak kos, hemat ongkir itu penting banget. Masakan Cafe Titik Kumpul rasanya rumahan banget, bersih, dan harganya jujur ramah di kantong."
+                                "Sebagai karyawan kos dekat kawasan, hemat ongkir itu penting banget. Masakan Cafe Titik Kumpul rasanya rumahan banget, bersih, dan harganya ramah di kantong."
                             </p>
                             <div class="flex items-center gap-3 pt-2 border-t border-stone-200/60">
                                 <div class="w-9 h-9 rounded-full bg-burgundy-800 text-gold-400 font-black text-xs flex items-center justify-center">BP</div>
                                 <div>
                                     <h4 class="font-bold text-stone-900 text-xs">Bagas Pratama</h4>
-                                    <span class="text-[10px] text-stone-500">Mahasiswa & Anak Kos</span>
+                                    <span class="text-[10px] text-stone-500">Karyawan MM2100 & Anak Kos</span>
                                 </div>
                             </div>
                         </div>
@@ -606,13 +676,13 @@
                                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                             </div>
                             <p class="text-xs text-stone-700 leading-relaxed italic">
-                                "Sering pesen Mei Nyemek sama Es Cemil buat makan siang pas kerja dari rumah. Porsinya pas dan rasanya konstan enak tiap kali pesen."
+                                "Sering pesen Mie Nyemek sama Es Cemil buat makan siang. Porsinya pas dan rasanya konstan enak tiap kali pesan pengantaran ke kantor."
                             </p>
                             <div class="flex items-center gap-3 pt-2 border-t border-stone-200/60">
                                 <div class="w-9 h-9 rounded-full bg-burgundy-800 text-gold-400 font-black text-xs flex items-center justify-center">DA</div>
                                 <div>
                                     <h4 class="font-bold text-stone-900 text-xs">Dian Anggraini</h4>
-                                    <span class="text-[10px] text-stone-500">Freelancer</span>
+                                    <span class="text-[10px] text-stone-500">Karyawan Swasta Cikarang</span>
                                 </div>
                             </div>
                         </div>
@@ -631,24 +701,24 @@
                                 📋 FREE DOWNLOAD PDF CHECKLIST
                             </span>
                             <h2 class="text-3xl sm:text-4xl font-black text-burgundy-950 leading-tight">
-                                Menu Makan Siang 7 Hari Anti-Pusing: Hemat Hingga 35%
+                                Menu Makan Siang 7 Hari Kantor & Pabrik: Hemat Hingga 35%
                             </h2>
                             <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
-                                Dapatkan rekomendasi kombinasi menu harian lezat agar Anda tidak perlu pusing memikirkan makan siang setiap hari. Dilengkapi voucher diskon khusus pengantaran!
+                                Dapatkan rekomendasi kombinasi menu harian lezat agar tim kantor atau Anda tidak perlu pusing memikirkan makan siang setiap hari. Dilengkapi voucher diskon katering pengantaran MM2100!
                             </p>
 
                             <div class="space-y-3 pt-2">
                                 <div class="flex items-center gap-3 text-sm font-bold text-stone-800">
                                     <i class="fa-solid fa-circle-check text-burgundy-700 text-base"></i>
-                                    <span>Rencana rotasi menu 7 hari agar tidak bosan</span>
+                                    <span>Rencana rotasi menu 7 hari anti-bosan</span>
                                 </div>
                                 <div class="flex items-center gap-3 text-sm font-bold text-stone-800">
                                     <i class="fa-solid fa-circle-check text-burgundy-700 text-base"></i>
-                                    <span>Kalkulasi estimasi anggaran makan bulanan jujur</span>
+                                    <span>Kalkulasi estimasi anggaran katering bulanan jujur</span>
                                 </div>
                                 <div class="flex items-center gap-3 text-sm font-bold text-stone-800">
                                     <i class="fa-solid fa-circle-check text-burgundy-700 text-base"></i>
-                                    <span>Kupon potongan langsung untuk pengantaran pertama</span>
+                                    <span>Kupon potongan pengantaran langsung ke MM2100</span>
                                 </div>
                             </div>
                         </div>
@@ -667,10 +737,10 @@
                                     <div>
                                         <label for="lead-role" class="block text-xs font-bold text-stone-800 mb-1">Status / Pekerjaan</label>
                                         <select id="lead-role" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-xs text-stone-900 focus:outline-none focus:ring-2 focus:ring-burgundy-700">
-                                            <option value="Karyawan Kantoran">Karyawan Kantoran</option>
+                                            <option value="Karyawan MM2100 / Perkantoran">Karyawan MM2100 / Perkantoran</option>
+                                            <option value="HRD / Purchasing Katering">HRD / Purchasing Katering</option>
                                             <option value="Anak Kos">Anak Kos</option>
                                             <option value="Orang Tua / Ibu Rumah Tangga">Orang Tua / Ibu Rumah Tangga</option>
-                                            <option value="Warga Lokal Sekitar">Warga Lokal Sekitar</option>
                                         </select>
                                     </div>
                                     <button type="submit" class="w-full bg-burgundy-800 hover:bg-burgundy-900 text-white font-black py-4 rounded-xl text-sm shadow-lg transition-all duration-200 flex items-center justify-center gap-2 border border-burgundy-700">
@@ -709,21 +779,21 @@
 
                         <div class="border border-stone-200 rounded-2xl overflow-hidden shadow-xs">
                             <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left font-bold text-stone-900 hover:bg-burgundy-50/50 transition-colors">
-                                <span class="text-sm sm:text-base">Apakah ada minimal pemesanan untuk pengantaran?</span>
+                                <span class="text-sm sm:text-base">Apakah melayani pengantaran gratis ke Kawasan Industri MM2100?</span>
                                 <i class="fa-solid fa-chevron-down text-burgundy-700 transition-transform duration-300"></i>
                             </button>
                             <div class="hidden p-5 pt-0 text-stone-600 text-xs sm:text-sm leading-relaxed border-t border-stone-100 bg-stone-50/50">
-                                Pengantaran bebas biaya (gratis ongkir) berlaku untuk area Cikarang Barat dengan minimal pemesanan 2 porsi. Untuk pemesanan 1 porsi tetap kami layani dengan penyesuaian flat ongkir sangat murah.
+                                Ya! Pengantaran bebas biaya (gratis ongkir) berlaku untuk area Cikarang Barat & Kawasan Industri MM2100 dengan minimal pemesanan 2 porsi. Kami mengantar tepat waktu sebelum jam makan siang kantor.
                             </div>
                         </div>
 
                         <div class="border border-stone-200 rounded-2xl overflow-hidden shadow-xs">
                             <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-5 text-left font-bold text-stone-900 hover:bg-burgundy-50/50 transition-colors">
-                                <span class="text-sm sm:text-base">Apakah bisa memesan untuk katering harian kantor atau acara?</span>
+                                <span class="text-sm sm:text-base">Apakah bisa memesan paket katering harian kantor / pabrik?</span>
                                 <i class="fa-solid fa-chevron-down text-burgundy-700 transition-transform duration-300"></i>
                             </button>
                             <div class="hidden p-5 pt-0 text-stone-600 text-xs sm:text-sm leading-relaxed border-t border-stone-100 bg-stone-50/50">
-                                Ya! Kami melayani katering harian perkantoran, pabrik, maupun konsumsi acara khusus dengan harga paket hemat dan jadwal pengantaran teratur.
+                                Sangat bisa! Kami melayani katering harian perkantoran, pabrik kawasan MM2100, maupun konsumsi rapat/acara dengan harga paket hemat dan skema invoice / penawaran khusus.
                             </div>
                         </div>
                     </div>
@@ -737,11 +807,11 @@
                     <div class="grid lg:grid-cols-12 gap-8 items-center">
                         <div class="lg:col-span-5 space-y-4">
                             <span class="text-burgundy-700 font-black text-xs uppercase tracking-widest bg-burgundy-100/60 px-3 py-1 rounded-full border border-burgundy-200">
-                                Lokasi Outlet & Map
+                                Lokasi Strategis Dekat MM2100
                             </span>
                             <h2 class="text-3xl font-black text-burgundy-950">Singgah ke Warkop & Cafe Titik Kumpul</h2>
                             <p class="text-stone-600 text-sm leading-relaxed">
-                                Nikmati suasana santai bersama teman atau rekan kerja, atau pesan untuk dibawa pulang (takeaway) & delivery langsung ke lokasi Anda di area Cikarang Barat.
+                                Lokasi kami sangat dekat dari pintu Kawasan Industri MM2100 & Gandamekar. Cocok untuk santap langsung, takeaway, maupun pesan antar harian.
                             </p>
                             
                             <div class="space-y-3.5 text-xs sm:text-sm text-stone-700 pt-2">
@@ -749,7 +819,7 @@
                                     <i class="fa-solid fa-location-dot text-burgundy-700 text-lg mt-0.5 shrink-0"></i>
                                     <div>
                                         <h4 class="font-bold text-stone-900">Alamat Lengkap:</h4>
-                                        <p class="text-stone-600 text-xs mt-0.5">Jl. Djasip RT 04 RW 002, Kp. Rawajulang, Desa Gandamekar, Kec. Cikarang Barat, Kab. Bekasi, Jawa Barat 17530</p>
+                                        <p class="text-stone-600 text-xs mt-0.5">Jl. Djasip RT 04 RW 002, Kp. Rawajulang, Desa Gandamekar, Kec. Cikarang Barat, Kab. Bekasi, Jawa Barat 17530 (Akses Mudah ke Kawasan MM2100)</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-3 bg-white p-3.5 rounded-2xl border border-stone-200 shadow-xs">
@@ -763,7 +833,7 @@
                                     <i class="fa-brands fa-whatsapp text-emerald-600 text-lg shrink-0"></i>
                                     <div>
                                         <h4 class="font-bold text-stone-900">Kontak WhatsApp:</h4>
-                                        <p class="text-stone-600 text-xs">0851-3496-1663 (Pemesanan & Katering)</p>
+                                        <p class="text-stone-600 text-xs">0851-3496-1663 (Pemesanan & Katering MM2100)</p>
                                     </div>
                                 </div>
                             </div>
@@ -779,7 +849,7 @@
                         <!-- Interactive Google Maps Container -->
                         <div class="lg:col-span-7 rounded-3xl overflow-hidden border border-burgundy-900/10 shadow-xl h-96 relative bg-stone-200 group">
                             <iframe 
-                                title="Peta Lokasi Warkop Titik Kumpul Gandamekar Cikarang Barat"
+                                title="Peta Lokasi Warkop Titik Kumpul Gandamekar Cikarang Barat MM2100"
                                 class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-500" 
                                 src="https://maps.google.com/maps?q=Jl.%20Djasip%20RT%2004%20RW%20002%20Kp.%20Rawajulang%20Gandamekar%20Cikarang%20Barat&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                                 allowfullscreen="" 
@@ -789,7 +859,7 @@
                             <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl border border-stone-200 shadow-sm pointer-events-none">
                                 <span class="text-[11px] font-black text-burgundy-950 flex items-center gap-1.5">
                                     <i class="fa-solid fa-store text-burgundy-700"></i>
-                                    Warkop / Cafe Titik Kumpul
+                                    Warkop / Cafe Titik Kumpul MM2100
                                 </span>
                             </div>
                         </div>
@@ -804,9 +874,9 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
                 <div class="flex items-center gap-3">
                     <div class="w-9 h-9 rounded-xl burgundy-gradient border border-gold-500/30 text-gold-400 flex items-center justify-center font-black text-sm">TK</div>
-                    <span class="text-white font-black text-sm">Cafe Titik Kumpul</span>
+                    <span class="text-white font-black text-sm">Cafe Titik Kumpul MM2100</span>
                 </div>
-                <p>© 2026 Cafe Titik Kumpul Cikarang. All rights reserved. Solusi Makan Siang Praktis.</p>
+                <p>© 2026 Cafe Titik Kumpul Cikarang Barat & MM2100. All rights reserved. Solusi Makan Siang & Katering Praktis.</p>
             </div>
         </footer>
 
@@ -874,9 +944,9 @@
     </div>
 
     <!-- FLOATING WHATSAPP BUTTON (PREMIUM BURGUNDY STYLE) -->
-    <a href="https://wa.me/6285134961663?text=Halo%20Cafe%20Titik%20Kumpul,%20saya%20mau%20tanya%20menu%20dan%20pemesanan!" target="_blank" class="fixed bottom-6 right-6 z-40 burgundy-gradient hover:bg-burgundy-900 text-white px-5 py-3.5 rounded-full font-extrabold text-sm shadow-2xl flex items-center gap-2.5 transition-all duration-200 hover:scale-105 border border-gold-500/30">
+    <a href="https://wa.me/6285134961663?text=Halo%20Cafe%20Titik%20Kumpul,%20saya%20mau%20tanya%20menu%20dan%20katering%20MM2100!" target="_blank" class="fixed bottom-6 right-6 z-40 burgundy-gradient hover:bg-burgundy-900 text-white px-5 py-3.5 rounded-full font-extrabold text-sm shadow-2xl flex items-center gap-2.5 transition-all duration-200 hover:scale-105 border border-gold-500/30">
         <i class="fa-brands fa-whatsapp text-xl text-gold-400"></i>
-        <span>Chat WhatsApp</span>
+        <span>Chat WhatsApp MM2100</span>
     </a>
 
     <!-- JAVASCRIPT INTERACTION LOGIC -->
@@ -888,7 +958,7 @@
         const menuData = [
             {
                 id: 1,
-                name: "Ayam Katsu Cabe Ijo Spesial",
+                name: "Ayam Katsu Sambal Cabe Ijo Spesial",
                 category: "utama",
                 price: 18000,
                 rating: "4.9",
@@ -897,6 +967,15 @@
             },
             {
                 id: 2,
+                name: "Nasi Ayam Sambal Ijo Original",
+                category: "utama",
+                price: 17000,
+                rating: "4.9",
+                img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
+                desc: "Ayam goreng rempah disiram sambal ijo ulek segar racikan pedas nikmat khas Titik Kumpul."
+            },
+            {
+                id: 3,
                 name: "Ayam Geprek Extra Pedas",
                 category: "utama",
                 price: 19000,
@@ -905,7 +984,7 @@
                 desc: "Ayam krispi digeprek dengan bumbu racikan cabai segar melimpah."
             },
             {
-                id: 3,
+                id: 4,
                 name: "Mie Nyemek Titik Kumpul",
                 category: "utama",
                 price: 15000,
@@ -914,7 +993,7 @@
                 desc: "Mie kuah kental gurih khas rempah rumahan bertabur topping lezat."
             },
             {
-                id: 4,
+                id: 5,
                 name: "Es Cemil Segar Rumahan",
                 category: "minuman",
                 price: 8000,
@@ -923,7 +1002,7 @@
                 desc: "Es serutan buah manis segar sebagai penutup hidangan makan siang."
             },
             {
-                id: 5,
+                id: 6,
                 name: "Es Teh Manis Jumbo",
                 category: "minuman",
                 price: 5000,
@@ -936,8 +1015,8 @@
         // TARGET PERSONA DATA
         const behaviourData = {
             'karyawan': {
-                headline: "Bingung Mau Makan Siang Apa Lagi Hari Ini?",
-                subheadline: "Stop pusing mikirin menu dan ongkir mahal ojek online. Nikmati masakan rumahan lezat, praktis, dan diantar tepat waktu langsung ke meja kerja Anda!"
+                headline: "Makan Siang MM2100 & Katering Kantor Bebas Ribet!",
+                subheadline: "Stop pusing mikirin menu & ongkir mahal ojek online di kawasan MM2100. Masakan rumahan lezat, higienis, dan diantar tepat waktu langsung ke meja kerja Anda!"
             },
             'anak-kos': {
                 headline: "Dompet Menjerit Tiap Akhir Bulan Gara-Gara Jajan?",
@@ -949,19 +1028,93 @@
             },
             'pemburu-diskon': {
                 headline: "Makan Siang Enak Nggak Perlu Mahal & Bebas Ongkir!",
-                subheadline: "Nikmati kelezatan Ayam Katsu & Mie Nyemek porsi jujur dengan harga hemat bebas biaya tersembunyi."
+                subheadline: "Nikmati kelezatan Ayam Katsu & Mie Nyemek porsi jujur dengan harga hemat bebas biaya tersembunyi pengantaran MM2100."
             }
         };
 
         // STATE MANAGEMENT
         let currentCart = [];
+        let currentHeroSlide = 0;
+        let totalHeroSlides = 4;
+        let heroSliderTimer = null;
+        let touchStartX = 0;
+        let touchEndX = 0;
 
         // ON LOAD INITIALIZATION
         window.onload = function() {
             renderMenuGrid('all');
             updateCartUI();
             calculateSavings();
+            startHeroSlider();
+            initHeroTouchEvents();
         };
+
+        // HERO SLIDER CONTROLLER LOGIC
+        function goToHeroSlide(index) {
+            currentHeroSlide = index;
+            if (currentHeroSlide >= totalHeroSlides) currentHeroSlide = 0;
+            if (currentHeroSlide < 0) currentHeroSlide = totalHeroSlides - 1;
+
+            const track = document.getElementById('hero-slider-track');
+            if(track) {
+                track.style.transform = `translateX(-${currentHeroSlide * 100}%)`;
+            }
+
+            // Update Dot Bullets State
+            const bullets = document.querySelectorAll('#hero-dots-container .slider-bullet');
+            bullets.forEach((b, i) => {
+                if(i === currentHeroSlide) {
+                    b.classList.add('active');
+                } else {
+                    b.classList.remove('active');
+                }
+            });
+        }
+
+        function nextHeroSlide() {
+            goToHeroSlide(currentHeroSlide + 1);
+        }
+
+        function prevHeroSlide() {
+            goToHeroSlide(currentHeroSlide - 1);
+        }
+
+        function startHeroSlider() {
+            if (heroSliderTimer) clearInterval(heroSliderTimer);
+            heroSliderTimer = setInterval(() => {
+                nextHeroSlide();
+            }, 4000);
+        }
+
+        function pauseHeroSlider() {
+            if (heroSliderTimer) clearInterval(heroSliderTimer);
+        }
+
+        function initHeroTouchEvents() {
+            const container = document.getElementById('hero-slider-container');
+            if(!container) return;
+
+            container.addEventListener('touchstart', (e) => {
+                pauseHeroSlider();
+                touchStartX = e.changedTouches[0].screenX;
+            }, {passive: true});
+
+            container.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleHeroSwipe();
+                startHeroSlider();
+            }, {passive: true});
+        }
+
+        function handleHeroSwipe() {
+            const swipeThreshold = 40;
+            if (touchEndX < touchStartX - swipeThreshold) {
+                nextHeroSlide();
+            }
+            if (touchEndX > touchStartX + swipeThreshold) {
+                prevHeroSlide();
+            }
+        }
 
         // RENDER MENU GRID
         function renderMenuGrid(category) {
@@ -1106,7 +1259,7 @@
                 return;
             }
 
-            let summary = `Halo Cafe Titik Kumpul, saya mau pesan makan siang:\n\n`;
+            let summary = `Halo Cafe Titik Kumpul, saya mau pesan makan siang MM2100:\n\n`;
             let total = 0;
 
             currentCart.forEach((item, i) => {
@@ -1117,7 +1270,7 @@
             });
 
             summary += `\n*Total Estimasi Pembayaran:* Rp ${total.toLocaleString('id-ID')}\n\n`;
-            summary += `Mohon dikonfirmasi jam pengantarannya ya!`;
+            summary += `Mohon dikonfirmasi jam pengantaran kawasan MM2100 ya!`;
 
             window.open(`https://wa.me/${WA_PHONE}?text=${encodeURIComponent(summary)}`, '_blank');
         }
@@ -1147,7 +1300,7 @@
         function orderKateringCalc() {
             const people = document.getElementById('calc-people').value;
             const days = document.getElementById('calc-days').value;
-            const msg = `Halo Cafe Titik Kumpul, saya mau tanya paket katering kantor untuk *${people} porsi/hari* selama *${days} hari kerja*. Boleh minta penawaran harganya?`;
+            const msg = `Halo Cafe Titik Kumpul, saya mau tanya paket katering kantor Kawasan MM2100 untuk *${people} porsi/hari* selama *${days} hari kerja*. Boleh minta penawaran harganya?`;
             window.open(`https://wa.me/${WA_PHONE}?text=${encodeURIComponent(msg)}`, '_blank');
         }
 
@@ -1179,7 +1332,7 @@
             const name = document.getElementById('lead-name').value;
             const role = document.getElementById('lead-role').value;
 
-            const msg = `Halo Cafe Titik Kumpul, saya *${name}* (${role}). Saya ingin meminta PDF "Checklist Menu Makan Siang 7 Hari" & Voucher Diskonnya!`;
+            const msg = `Halo Cafe Titik Kumpul, saya *${name}* (${role}). Saya ingin meminta PDF "Checklist Menu Makan Siang 7 Hari MM2100" & Voucher Diskonnya!`;
             window.open(`https://wa.me/${WA_PHONE}?text=${encodeURIComponent(msg)}`, '_blank');
         }
 
