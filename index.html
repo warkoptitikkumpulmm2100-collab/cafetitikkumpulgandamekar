@@ -211,6 +211,24 @@
             width: 1.75rem !important;
             background-color: #F3C562 !important;
         }
+
+        /* Header responsive: compact controls on narrow phones */
+        .site-header-row { width: 100%; }
+        .header-actions a, .header-actions button { flex-shrink: 0; touch-action: manipulation; }
+        @media (max-width: 380px) {
+            .site-header-row { gap: 0.35rem; }
+            .header-logo { width: 2.25rem; height: 2.25rem; }
+            .header-actions { gap: 0.3rem; }
+            .header-actions .header-action-whatsapp,
+            .header-actions .header-action-cart { width: 2.25rem; height: 2.25rem; padding: 0; }
+            .header-actions .header-action-whatsapp i { font-size: 1.15rem; }
+            .header-actions .header-action-cart i { font-size: 1rem; }
+            .header-actions #cart-count-badge { position: absolute; top: -0.25rem; right: -0.25rem; min-width: 1rem; height: 1rem; font-size: 0.6rem; padding: 0 0.2rem; }
+            .site-header-row > a { gap: 0.35rem; }
+            .site-header-row > a span:first-child { font-size: 0.78rem; }
+            .site-header-row > a span:last-child { font-size: 0.52rem; letter-spacing: 0.04em; }
+        }
+        #mobile-menu a { min-height: 2.75rem; display: flex; align-items: center; }
     </style>
 </head>
 <body class="bg-cream text-stone-800 font-sans antialiased selection:bg-burgundy-800 selection:text-white">
@@ -220,47 +238,38 @@
         <!-- HEADER / NAVIGATION BAR -->
         <header class="sticky top-0 z-40 glass-header border-b border-burgundy-900/10 transition-all duration-300">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between h-20">
-                    
-                    <!-- Brand Logo -->
-                    <a href="#hero" class="flex items-center gap-3 group min-w-0" aria-label="Cafe Titik Kumpul - Beranda">
-                        <img src="logo-cafe-titik-kumpul.png" alt="Logo Cafe Titik Kumpul Gandamekar" class="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gold-500 shadow-md group-hover:scale-105 transition-transform duration-300" width="64" height="64" fetchpriority="high">
+                <div class="site-header-row flex items-center justify-between gap-2 sm:gap-4 min-h-16 md:h-20 py-2 md:py-0">
+                    <!-- Brand -->
+                    <a href="#hero" class="flex items-center gap-2 sm:gap-3 group min-w-0 flex-1 md:flex-none" aria-label="Cafe Titik Kumpul - Beranda">
+                        <img src="logo-cafe-titik-kumpul.png" alt="Logo Cafe Titik Kumpul Gandamekar" class="header-logo w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full object-cover border-2 border-gold-500 shadow-md shrink-0" width="64" height="64" fetchpriority="high">
                         <div class="flex flex-col min-w-0">
-                            <span class="font-black text-burgundy-950 text-lg sm:text-xl tracking-tight leading-tight group-hover:text-burgundy-700 transition-colors">Cafe Titik Kumpul</span>
-                            <span class="text-[10px] text-burgundy-700/80 font-bold uppercase tracking-widest">Gandamekar · MM2100</span>
+                            <span class="font-black text-burgundy-950 text-sm sm:text-lg md:text-xl tracking-tight leading-tight group-hover:text-burgundy-700 transition-colors truncate">Cafe Titik Kumpul</span>
+                            <span class="text-[9px] sm:text-[10px] text-burgundy-700/80 font-bold uppercase tracking-wide sm:tracking-widest truncate">Gandamekar · MM2100</span>
                         </div>
                     </a>
 
-                    <!-- Desktop Nav Links -->
-                    <nav class="hidden md:flex items-center space-x-7 text-sm font-bold text-stone-600">
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex items-center space-x-5 lg:space-x-7 text-sm font-bold text-stone-600">
                         <a href="#hero" class="hover:text-burgundy-700 transition-colors py-1">Beranda</a>
                         <a href="#menu" class="hover:text-burgundy-700 transition-colors py-1">Menu Favorit</a>
                         <a href="#panduan-layanan" class="hover:text-burgundy-700 transition-colors py-1">Katering & Area</a>
-                        <a href="#calculator" class="hover:text-burgundy-700 transition-colors py-1 flex items-center gap-1">
-                            <span>Kalkulator Hemat</span>
-                            <span class="bg-gold-400 text-burgundy-950 text-[10px] font-black px-1.5 py-0.5 rounded">Hitung</span>
-                        </a>
+                        <a href="#calculator" class="hover:text-burgundy-700 transition-colors py-1">Kalkulator Hemat</a>
                         <a href="#lead-magnet" class="hover:text-burgundy-700 transition-colors py-1">Checklist 7 Hari</a>
                         <a href="#faq" class="hover:text-burgundy-700 transition-colors py-1">FAQ</a>
                     </nav>
 
-                    <!-- Actions Buttons -->
-                    <div class="flex items-center gap-3">
-                        <!-- Header WhatsApp Button Premium Burgundy -->
-                        <a href="https://wa.me/6285134961663?text=Halo%20Cafe%20Titik%20Kumpul,%20saya%20mau%20tanya%20menu%20dan%20katering%20MM2100!" target="_blank" rel="noopener noreferrer" class="burgundy-gradient hover:bg-burgundy-900 text-white px-4 py-2.5 rounded-2xl font-bold text-sm transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 border border-gold-500/30">
-                            <i class="fa-brands fa-whatsapp text-lg text-gold-400"></i>
+                    <!-- Compact actions on mobile -->
+                    <div class="header-actions flex items-center justify-end gap-1.5 sm:gap-2 shrink-0">
+                        <a aria-label="Hubungi Cafe Titik Kumpul melalui WhatsApp" title="WhatsApp" href="https://wa.me/6285134961663?text=Halo%20Cafe%20Titik%20Kumpul,%20saya%20mau%20tanya%20menu%20dan%20katering%20MM2100!" target="_blank" rel="noopener noreferrer" class="header-action-whatsapp burgundy-gradient text-white w-10 h-10 sm:w-auto sm:h-auto sm:px-3 sm:py-2.5 rounded-xl sm:rounded-2xl font-bold text-sm flex items-center justify-center gap-2 shadow-sm border border-gold-500/30">
+                            <i class="fa-brands fa-whatsapp text-xl text-gold-400"></i>
                             <span class="hidden sm:inline">WhatsApp</span>
                         </a>
-
-                        <!-- Cart Trigger Button -->
-                        <button id="open-cart-btn" onclick="toggleCartDrawer()" class="bg-burgundy-800 hover:bg-burgundy-900 text-white px-4 py-2.5 rounded-2xl font-bold text-sm transition-all duration-300 flex items-center gap-2.5 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 border border-burgundy-700">
-                            <i class="fa-solid fa-bag-shopping text-gold-400"></i>
+                        <button id="open-cart-btn" type="button" onclick="toggleCartDrawer()" aria-label="Buka keranjang belanja" title="Keranjang" class="header-action-cart relative bg-burgundy-800 text-white w-10 h-10 sm:w-auto sm:h-auto sm:px-3 sm:py-2.5 rounded-xl sm:rounded-2xl font-bold text-sm flex items-center justify-center gap-2 shadow-sm border border-burgundy-700">
+                            <i class="fa-solid fa-bag-shopping text-gold-400 text-lg"></i>
                             <span class="hidden sm:inline">Keranjang</span>
-                            <span id="cart-count-badge" class="bg-gold-400 text-burgundy-950 text-xs font-black px-2 py-0.5 rounded-full shadow-inner">0</span>
+                            <span id="cart-count-badge" class="bg-gold-400 text-burgundy-950 text-[10px] font-black min-w-4 h-4 px-1 rounded-full shadow-inner inline-flex items-center justify-center">0</span>
                         </button>
-
-                        <!-- Mobile Menu Button -->
-                        <button onclick="toggleMobileMenu()" class="md:hidden text-burgundy-900 text-2xl p-2 focus:outline-none">
+                        <button id="mobile-menu-toggle" type="button" onclick="toggleMobileMenu()" aria-label="Buka menu navigasi" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden w-10 h-10 rounded-xl text-burgundy-900 bg-burgundy-50 border border-burgundy-900/10 flex items-center justify-center text-xl focus:outline-none focus:ring-2 focus:ring-gold-500">
                             <i class="fa-solid fa-bars-staggered" id="mobile-menu-icon"></i>
                         </button>
                     </div>
@@ -269,12 +278,12 @@
 
             <!-- Mobile Dropdown Navigation -->
             <div id="mobile-menu" class="hidden md:hidden bg-cream border-b border-burgundy-900/10 px-4 pt-2 pb-6 space-y-3">
-                <a href="#hero" onclick="toggleMobileMenu()" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2 border-b border-stone-200">Beranda</a>
-                <a href="#menu" onclick="toggleMobileMenu()" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2 border-b border-stone-200">Menu Favorit</a>
-                <a href="#panduan-layanan" onclick="toggleMobileMenu()" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2 border-b border-stone-200">Katering & Area Layanan</a>
-                <a href="#calculator" onclick="toggleMobileMenu()" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2 border-b border-stone-200">Kalkulator Hemat</a>
-                <a href="#lead-magnet" onclick="toggleMobileMenu()" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2 border-b border-stone-200">Checklist 7 Hari</a>
-                <a href="#faq" onclick="toggleMobileMenu()" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2">FAQ & Lokasi</a>
+                <a href="#hero" onclick="toggleMobileMenu(true)" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2 border-b border-stone-200">Beranda</a>
+                <a href="#menu" onclick="toggleMobileMenu(true)" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2 border-b border-stone-200">Menu Favorit</a>
+                <a href="#panduan-layanan" onclick="toggleMobileMenu(true)" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2 border-b border-stone-200">Katering & Area Layanan</a>
+                <a href="#calculator" onclick="toggleMobileMenu(true)" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2 border-b border-stone-200">Kalkulator Hemat</a>
+                <a href="#lead-magnet" onclick="toggleMobileMenu(true)" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2 border-b border-stone-200">Checklist 7 Hari</a>
+                <a href="#faq" onclick="toggleMobileMenu(true)" class="block font-bold text-stone-700 hover:text-burgundy-800 py-2">FAQ & Lokasi</a>
             </div>
         </header>
 
@@ -1504,9 +1513,21 @@
         }
 
         // MOBILE MENU TOGGLE
-        function toggleMobileMenu() {
+        function toggleMobileMenu(forceClose = false) {
             const menu = document.getElementById('mobile-menu');
-            if(menu) menu.classList.toggle('hidden');
+            const toggle = document.getElementById('mobile-menu-toggle');
+            const icon = document.getElementById('mobile-menu-icon');
+            if (!menu) return;
+            const shouldClose = forceClose === true || !menu.classList.contains('hidden');
+            menu.classList.toggle('hidden', shouldClose);
+            if (toggle) {
+                toggle.setAttribute('aria-expanded', String(!shouldClose));
+                toggle.setAttribute('aria-label', shouldClose ? 'Buka menu navigasi' : 'Tutup menu navigasi');
+            }
+            if (icon) {
+                icon.classList.toggle('fa-bars-staggered', shouldClose);
+                icon.classList.toggle('fa-xmark', !shouldClose);
+            }
         }
 
         // TOAST NOTIFICATION HELPERS
