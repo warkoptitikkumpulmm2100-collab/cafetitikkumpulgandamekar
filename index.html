@@ -223,13 +223,11 @@
                 <div class="flex items-center justify-between h-20">
                     
                     <!-- Brand Logo -->
-                    <a href="#hero" class="flex items-center gap-3 group">
-                        <div class="w-11 h-11 rounded-2xl burgundy-gradient text-gold-400 flex items-center justify-center font-black text-xl shadow-md group-hover:scale-105 transition-transform duration-300 border border-gold-500/20">
-                            TK
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="font-black text-burgundy-950 text-xl tracking-tight leading-tight group-hover:text-burgundy-700 transition-colors">Titik Kumpul</span>
-                            <span class="text-[10px] text-burgundy-700/80 font-bold uppercase tracking-widest">Cafe & Culinary MM2100</span>
+                    <a href="#hero" class="flex items-center gap-3 group min-w-0" aria-label="Cafe Titik Kumpul - Beranda">
+                        <img src="logo-cafe-titik-kumpul.png" alt="Logo Cafe Titik Kumpul Gandamekar" class="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-gold-500 shadow-md group-hover:scale-105 transition-transform duration-300" width="64" height="64" fetchpriority="high">
+                        <div class="flex flex-col min-w-0">
+                            <span class="font-black text-burgundy-950 text-lg sm:text-xl tracking-tight leading-tight group-hover:text-burgundy-700 transition-colors">Cafe Titik Kumpul</span>
+                            <span class="text-[10px] text-burgundy-700/80 font-bold uppercase tracking-widest">Gandamekar · MM2100</span>
                         </div>
                     </a>
 
@@ -979,14 +977,65 @@
 
         </main>
 
-        <!-- FOOTER -->
-        <footer class="bg-burgundy-950 text-burgundy-200/80 py-12 border-t border-burgundy-900 text-xs">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-                <div class="flex items-center gap-3">
-                    <div class="w-9 h-9 rounded-xl burgundy-gradient border border-gold-500/30 text-gold-400 flex items-center justify-center font-black text-sm">TK</div>
-                    <span class="text-white font-black text-sm">Cafe Titik Kumpul MM2100</span>
+        <!-- PROFIL SINGKAT -->
+        <section id="profil" class="py-12 bg-cream border-t border-burgundy-900/10" aria-labelledby="profil-title">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-[auto,1fr] gap-6 items-center">
+                <img src="logo-cafe-titik-kumpul.png" alt="Logo Cafe Titik Kumpul Gandamekar" class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl object-cover border border-gold-500/50 shadow-lg mx-auto" width="144" height="144" loading="lazy">
+                <div>
+                    <p class="text-xs font-black uppercase tracking-[.2em] text-burgundy-700">Kenali Kami</p>
+                    <h2 id="profil-title" class="text-2xl sm:text-3xl font-black text-burgundy-950 mt-2">Cafe Titik Kumpul Gandamekar</h2>
+                    <p class="text-sm sm:text-base text-stone-600 leading-7 mt-3 max-w-3xl">Tempat mencari menu makan siang praktis dan layanan pesanan untuk pelanggan di Gandamekar, Cikarang Barat, serta area Kawasan Industri MM2100. Pilih menu di website dan hubungi admin untuk konfirmasi pesanan, ketersediaan, serta detail pengantaran.</p>
+                    <p class="text-sm text-stone-600 mt-3"><i class="fa-solid fa-location-dot text-burgundy-700 mr-2"></i>Jl. Djasip, Kp. Rawajulang, Desa Gandamekar, Cikarang Barat, Kabupaten Bekasi</p>
                 </div>
-                <p>© 2026 Cafe Titik Kumpul Cikarang Barat & MM2100. All rights reserved. Solusi Makan Siang & Katering Praktis.</p>
+            </div>
+        </section>
+
+        <!-- FOOTER: NAVIGASI, PROFIL & MEDIA SOSIAL -->
+        <footer class="bg-burgundy-950 text-burgundy-100/80 pt-12 pb-6 border-t border-burgundy-900 text-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-9 pb-9 border-b border-white/10">
+                    <div>
+                        <a href="#hero" class="inline-flex items-center gap-3 group">
+                            <img src="logo-cafe-titik-kumpul.png" alt="Logo Cafe Titik Kumpul" class="w-16 h-16 rounded-full object-cover border border-gold-500 shadow" width="64" height="64" loading="lazy">
+                            <span class="font-black text-white text-base">Cafe Titik Kumpul<br><span class="text-gold-400 text-xs tracking-widest uppercase">Gandamekar</span></span>
+                        </a>
+                        <p class="mt-4 text-xs leading-6 text-burgundy-100/70">Makan enak, bersama di sini. Menu makan siang dan pesanan katering untuk area Cikarang Barat & MM2100.</p>
+                    </div>
+                    <nav aria-label="Menu footer">
+                        <h2 class="text-white font-black text-base mb-4">Menu Website</h2>
+                        <ul class="space-y-3 text-sm">
+                            <li><a href="#hero" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-house w-5 text-gold-400"></i> Beranda</a></li>
+                            <li><a href="#menu" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-utensils w-5 text-gold-400"></i> Menu Favorit</a></li>
+                            <li><a href="#panduan-layanan" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-concierge-bell w-5 text-gold-400"></i> Layanan & Katering</a></li>
+                            <li><a href="#calculator" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-calculator w-5 text-gold-400"></i> Kalkulator Hemat</a></li>
+                            <li><a href="#faq" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-circle-question w-5 text-gold-400"></i> FAQ</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <h2 class="text-white font-black text-base mb-4">Profil & Lokasi</h2>
+                        <ul class="space-y-3 text-sm">
+                            <li><a href="#profil" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-circle-info w-5 text-gold-400"></i> Tentang Cafe</a></li>
+                            <li><a href="#lokasi" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-map-location-dot w-5 text-gold-400"></i> Lokasi & Pengantaran</a></li>
+                            <li><a href="#order-card-section" class="hover:text-gold-400 transition-colors"><i class="fa-solid fa-bag-shopping w-5 text-gold-400"></i> Cara Pemesanan</a></li>
+                        </ul>
+                        <p class="text-xs leading-6 mt-4 text-burgundy-100/60">Jl. Djasip, Kp. Rawajulang, Desa Gandamekar, Cikarang Barat, Kabupaten Bekasi.</p>
+                    </div>
+                    <div id="media-sosial">
+                        <h2 class="text-white font-black text-base mb-4">Media Sosial & Kontak</h2>
+                        <p class="text-xs leading-6 text-burgundy-100/70 mb-4">Hubungi kami melalui WhatsApp untuk pertanyaan menu, pesanan, dan katering.</p>
+                        <a href="https://wa.me/6285134961663?text=Halo%20Cafe%20Titik%20Kumpul,%20saya%20ingin%20bertanya%20tentang%20menu%20dan%20pesanan." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-green-600 hover:bg-green-500 text-white font-bold px-4 py-3 transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Admin</a>
+                        <div class="flex items-center gap-3 mt-4 text-xl text-gold-400" aria-label="Platform media sosial">
+                            <span title="Instagram — tautan akun resmi belum ditambahkan"><i class="fa-brands fa-instagram"></i></span>
+                            <span title="TikTok — tautan akun resmi belum ditambahkan"><i class="fa-brands fa-tiktok"></i></span>
+                            <span title="Facebook — tautan akun resmi belum ditambahkan"><i class="fa-brands fa-facebook"></i></span>
+                        </div>
+                        <p class="text-[11px] text-burgundy-100/50 mt-2">Instagram, TikTok, dan Facebook: tautan akun resmi dapat ditambahkan setelah username tersedia.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-3 pt-5 text-xs text-burgundy-100/60">
+                    <p>© 2026 Cafe Titik Kumpul Gandamekar. Hak cipta dilindungi.</p>
+                    <a href="#hero" class="hover:text-gold-400"><i class="fa-solid fa-arrow-up mr-1"></i> Kembali ke atas</a>
+                </div>
             </div>
         </footer>
 
