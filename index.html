@@ -212,6 +212,19 @@
             background-color: #F3C562 !important;
         }
 
+
+        /* Menu posters: keep the complete portrait artwork visible in every frame. */
+        #hero-slider-container { aspect-ratio: 3 / 4; height: auto; }
+        #hero-slider-track > div { height: 100%; }
+        #hero-slider-track img { display: block; width: 100%; height: 100%; object-fit: contain; }
+        #menu-grid > div { min-width: 0; }
+        #menu-grid img { display: block; }
+        #scroll-top-btn { -webkit-tap-highlight-color: transparent; }
+        @media (max-width: 640px) {
+            #hero-slider-container { min-height: 0; max-height: 76vh; }
+            #scroll-top-btn { right: 1rem; bottom: 5.25rem; width: 2.75rem; height: 2.75rem; }
+        }
+
         /* Header responsive: compact controls on narrow phones */
         .site-header-row { width: 100%; }
         .header-actions a, .header-actions button { flex-shrink: 0; touch-action: manipulation; }
@@ -360,57 +373,29 @@
 
                         <!-- Right Hero Image Showcase Slider Carousel -->
                         <div class="lg:col-span-5 relative">
-                            <div id="hero-slider-container" class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group h-[440px] bg-stone-900" onmouseenter="pauseHeroSlider()" onmouseleave="startHeroSlider()">
+                            <div id="hero-slider-container" class="relative mx-auto w-full max-w-[560px] aspect-[3/4] min-h-[460px] max-h-[720px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white group bg-stone-950" onmouseenter="pauseHeroSlider()" onmouseleave="startHeroSlider()">
                                 
                                 <!-- Slider Track / Wrapper -->
                                 <div id="hero-slider-track" class="w-full h-full flex transition-transform duration-700 ease-out">
                                     
                                     <!-- Slide 1 -->
                                     <div class="w-full h-full shrink-0 relative">
-                                        <img id="hero-menu-image-1" data-embedded-image="basreng" src="" alt="Poster menu Basreng Chili Oil Cafe Titik Kumpul" class="w-full h-full object-cover">
-                                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-burgundy-950 via-burgundy-950/70 to-transparent p-6 text-white pt-16">
-                                            <span class="bg-gold-400 text-burgundy-950 font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
-                                                🔥 Best Seller #1 MM2100
-                                            </span>
-                                            <h3 class="text-2xl font-black mt-2 text-white">Ayam Katsu Cabe Ijo</h3>
-                                            <p class="text-xs text-burgundy-100 mt-1 leading-relaxed">Fillet ayam krispi renyah + sambal ijo rumahan dengan racikan rempah pedas mantap.</p>
-                                        </div>
+                                        <img id="hero-menu-image-1" data-embedded-image="basreng" src="" alt="Poster menu Basreng Chili Oil Cafe Titik Kumpul" class="w-full h-full object-contain bg-stone-950">
                                     </div>
 
                                     <!-- Slide 2 -->
                                     <div class="w-full h-full shrink-0 relative">
-                                        <img id="hero-menu-image-2" data-embedded-image="otak" src="" alt="Poster menu Otak-Otak Chili Oil Cafe Titik Kumpul" class="w-full h-full object-cover">
-                                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-burgundy-950 via-burgundy-950/70 to-transparent p-6 text-white pt-16">
-                                            <span class="bg-red-500 text-white font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
-                                                🌶️ Best Seller #2
-                                            </span>
-                                            <h3 class="text-2xl font-black mt-2 text-white">Ayam Geprek Pedas Mantap</h3>
-                                            <p class="text-xs text-burgundy-100 mt-1 leading-relaxed">Daging ayam krispi renyah bertabur sambal geprek segar racikan bumbu pilihan.</p>
-                                        </div>
+                                        <img id="hero-menu-image-2" data-embedded-image="otak" src="" alt="Poster menu Otak-Otak Chili Oil Cafe Titik Kumpul" class="w-full h-full object-contain bg-stone-950">
                                     </div>
 
                                     <!-- Slide 3 -->
                                     <div class="w-full h-full shrink-0 relative">
-                                        <img id="hero-menu-image-3" data-embedded-image="mie" src="" alt="Poster menu Mie Nyemek Cafe Titik Kumpul" class="w-full h-full object-cover">
-                                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-burgundy-950 via-burgundy-950/70 to-transparent p-6 text-white pt-16">
-                                            <span class="bg-amber-500 text-burgundy-950 font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
-                                                🍲 Comfort Food
-                                            </span>
-                                            <h3 class="text-2xl font-black mt-2 text-white">Mie Nyemek Titik Kumpul</h3>
-                                            <p class="text-xs text-burgundy-100 mt-1 leading-relaxed">Mie kuah kental gurih khas rumahan kaya rempah bertabur topping lezat mengenyangkan.</p>
-                                        </div>
+                                        <img id="hero-menu-image-3" data-embedded-image="mie" src="" alt="Poster menu Mie Nyemek Cafe Titik Kumpul" class="w-full h-full object-contain bg-stone-950">
                                     </div>
 
                                     <!-- Slide 4 -->
                                     <div class="w-full h-full shrink-0 relative">
-                                        <img id="hero-menu-image-4" data-embedded-image="es" src="" alt="Poster menu Es Cemil Cafe Titik Kumpul" class="w-full h-full object-cover">
-                                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-burgundy-950 via-burgundy-950/70 to-transparent p-6 text-white pt-16">
-                                            <span class="bg-cyan-400 text-burgundy-950 font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
-                                                🍹 Segar & Penutup
-                                            </span>
-                                            <h3 class="text-2xl font-black mt-2 text-white">Es Cemil & Minuman Segar</h3>
-                                            <p class="text-xs text-burgundy-100 mt-1 leading-relaxed">Penutup manis nan segar pelengkap santap makan siang sempurna Anda.</p>
-                                        </div>
+                                        <img id="hero-menu-image-4" data-embedded-image="es" src="" alt="Poster menu Es Cemil Cafe Titik Kumpul" class="w-full h-full object-contain bg-stone-950">
                                     </div>
 
                                 </div>
@@ -485,7 +470,7 @@
                             
                             <!-- Large Product Image Showcase -->
                             <div class="relative rounded-3xl overflow-hidden border border-stone-200 shadow-sm bg-stone-100">
-                                <img id="custom-prod-img" data-embedded-image="basreng" src="" alt="Detail Produk Cafe Titik Kumpul MM2100" class="w-full h-80 sm:h-[400px] object-cover transition-all duration-300">
+                                <img id="custom-prod-img" data-embedded-image="basreng" src="" alt="Detail Produk Cafe Titik Kumpul MM2100" class="w-full h-80 sm:h-[400px] object-contain bg-stone-100 transition-all duration-300">
                             </div>
 
                             <!-- Product Info Header -->
@@ -1086,8 +1071,8 @@
             <div class="absolute inset-0 bg-burgundy-950/70 backdrop-blur-xs" onclick="closeQuickView()"></div>
             <div class="relative bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl z-10 space-y-4 border border-burgundy-900/10">
                 <button onclick="closeQuickView()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-stone-100 text-stone-600 font-bold flex items-center justify-center">✕</button>
-                <div class="h-48 rounded-2xl overflow-hidden border border-stone-200">
-                    <img id="modal-img" src="" class="w-full h-full object-cover">
+                <div class="aspect-[3/4] max-h-[420px] rounded-2xl overflow-hidden border border-stone-200 bg-stone-100">
+                    <img id="modal-img" src="" class="w-full h-full object-contain">
                 </div>
                 <div>
                     <span id="modal-cat" class="text-[10px] font-black uppercase text-burgundy-700 bg-burgundy-50 px-2 py-0.5 rounded">Category</span>
@@ -1110,6 +1095,11 @@
         </div>
 
     </div>
+
+    <!-- FLOATING SCROLL-TO-TOP BUTTON -->
+    <button id="scroll-top-btn" type="button" aria-label="Kembali ke atas" title="Kembali ke atas" onclick="scrollToTop()" class="fixed bottom-[5.5rem] right-6 z-40 hidden h-12 w-12 items-center justify-center rounded-full border border-gold-500/40 burgundy-gradient text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-gold-400/50" style="opacity:0; transform:translateY(8px);">
+        <i class="fa-solid fa-arrow-up text-lg text-gold-400" aria-hidden="true"></i>
+    </button>
 
     <!-- FLOATING WHATSAPP BUTTON (PREMIUM BURGUNDY STYLE) -->
     <a href="https://wa.me/6285134961663?text=Halo%20Cafe%20Titik%20Kumpul,%20saya%20mau%20tanya%20menu%20dan%20katering%20MM2100!" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 burgundy-gradient hover:bg-burgundy-900 text-white px-5 py-3.5 rounded-full font-extrabold text-sm shadow-2xl flex items-center gap-2.5 transition-all duration-200 hover:scale-105 border border-gold-500/30">
@@ -1327,8 +1317,8 @@
                 const cardHtml = `
                     <div class="bg-white rounded-3xl overflow-hidden border border-burgundy-900/10 card-shadow card-shadow-hover transition-all duration-300 flex flex-col justify-between group">
                         <div>
-                            <div class="relative h-48 overflow-hidden cursor-pointer" onclick="openQuickView(${item.id})">
-                                <img src="${item.img}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                            <div class="relative aspect-[3/4] w-full overflow-hidden cursor-pointer bg-stone-100" onclick="openQuickView(${item.id})">
+                                <img src="${item.img}" alt="${item.name}" class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-500" loading="lazy" decoding="async">
                                 <span class="absolute top-3 right-3 bg-white/95 backdrop-blur-xs font-black text-xs text-burgundy-950 px-2.5 py-1 rounded-full shadow-sm border border-stone-200">
                                     ★ ${item.rating}
                                 </span>
@@ -1560,6 +1550,32 @@
                 icon.classList.toggle('fa-xmark', !shouldClose);
             }
         }
+
+        // FLOATING SCROLL-TO-TOP BUTTON
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function updateScrollTopButton() {
+            const button = document.getElementById('scroll-top-btn');
+            if (!button) return;
+            const visible = window.scrollY > 360;
+            if (visible) {
+                button.classList.remove('hidden');
+                button.classList.add('flex');
+                requestAnimationFrame(() => {
+                    button.style.opacity = '1';
+                    button.style.transform = 'translateY(0)';
+                });
+            } else {
+                button.style.opacity = '0';
+                button.style.transform = 'translateY(8px)';
+                button.classList.add('hidden');
+                button.classList.remove('flex');
+            }
+        }
+        window.addEventListener('scroll', updateScrollTopButton, { passive: true });
+        document.addEventListener('DOMContentLoaded', updateScrollTopButton);
 
         // TOAST NOTIFICATION HELPERS
         function showToast(msg) {
