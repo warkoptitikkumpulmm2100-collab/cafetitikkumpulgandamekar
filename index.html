@@ -213,15 +213,120 @@
         }
 
 
-        /* Menu posters: keep the complete portrait artwork visible in every frame. */
-        #hero-slider-container { aspect-ratio: 3 / 4; height: auto; }
-        #hero-slider-track > div { height: 100%; }
-        #hero-slider-track img { display: block; width: 100%; height: 100%; object-fit: contain; }
-        #menu-grid > div { min-width: 0; }
-        #menu-grid img { display: block; }
+        /* Premium visual system: forest green, warm ivory, restrained gold. */
+        :root {
+            --premium-green: #123d2b;
+            --premium-green-deep: #09291d;
+            --premium-ivory: #fbf7ed;
+            --premium-gold: #c8a45d;
+            --premium-ink: #28251f;
+        }
+        #hero-slider-container {
+            aspect-ratio: 3 / 4;
+            height: auto;
+            min-height: 0 !important;
+            max-height: min(680px, 76vh);
+            background: radial-gradient(ellipse at 50% 35%, #24563f 0%, var(--premium-green) 58%, var(--premium-green-deep) 100%);
+            border: 1px solid rgba(200, 164, 93, .72) !important;
+            border-radius: 1.5rem;
+            padding: 8px;
+            box-shadow: 0 28px 70px -28px rgba(9, 41, 29, .55), 0 0 0 5px rgba(255,255,255,.72), inset 0 0 0 1px rgba(255,255,255,.12);
+        }
+        #hero-slider-track { align-items: stretch; }
+        #hero-slider-track > div {
+            height: 100%;
+            min-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 1rem;
+            background: linear-gradient(145deg, #f8f0df 0%, #e8dcc1 100%);
+        }
+        #hero-slider-track img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            background: transparent !important;
+            border-radius: .8rem;
+        }
+        #hero-slider-container > button {
+            width: 2.75rem;
+            height: 2.75rem;
+            color: #fffdf6;
+            background: rgba(9, 41, 29, .84) !important;
+            border: 1px solid rgba(200, 164, 93, .72) !important;
+            box-shadow: 0 8px 24px rgba(0,0,0,.2);
+        }
+        #hero-dots-container {
+            background: rgba(9, 41, 29, .84) !important;
+            border-color: rgba(200, 164, 93, .48) !important;
+        }
+        .slider-bullet.active { background-color: var(--premium-gold) !important; }
+        #menu-grid { gap: 1.25rem; }
+        #menu-grid > div {
+            min-width: 0;
+            background: linear-gradient(180deg, #fffefa 0%, #fbf7ed 100%);
+            border: 1px solid rgba(164, 133, 77, .28) !important;
+            border-radius: 1.25rem;
+            box-shadow: 0 8px 28px rgba(37, 43, 32, .065);
+            overflow: hidden;
+            transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+        }
+        #menu-grid > div:hover {
+            transform: translateY(-5px);
+            border-color: rgba(200, 164, 93, .72) !important;
+            box-shadow: 0 20px 42px rgba(18, 61, 43, .13);
+        }
+        #menu-grid > div > div:first-child > div:first-child {
+            aspect-ratio: 4 / 5;
+            background: linear-gradient(145deg, #f8f0df, #e9dec7) !important;
+            border-bottom: 1px solid rgba(164, 133, 77, .22);
+            padding: .55rem;
+        }
+        #menu-grid img {
+            display: block;
+            border-radius: .75rem;
+            object-fit: contain !important;
+            object-position: center;
+            transition: transform .4s ease;
+        }
+        #menu-grid > div:hover img { transform: scale(1.025); }
+        #menu-grid h3 { letter-spacing: -.025em; line-height: 1.35; }
+        #menu-grid > div > div:first-child > div:nth-child(2) { padding: 1rem 1.1rem .85rem; }
+        #menu-grid > div > div:last-child { padding: 0 1.1rem 1.1rem; margin-top: auto; }
+        #menu-grid > div > div:last-child > span { color: var(--premium-green) !important; }
+        #menu-grid > div > div:last-child > button {
+            background: var(--premium-green) !important;
+            border: 1px solid var(--premium-green) !important;
+            border-radius: .75rem;
+            padding: .65rem .9rem;
+        }
+        #menu-grid > div > div:last-child > button:hover { background: var(--premium-green-deep) !important; }
         #scroll-top-btn { -webkit-tap-highlight-color: transparent; }
+        @media (min-width: 1024px) {
+            #hero-slider-container { max-width: 490px; }
+        }
         @media (max-width: 640px) {
-            #hero-slider-container { min-height: 0; max-height: 76vh; }
+            #hero-slider-container {
+                width: min(100%, 410px);
+                max-height: 70vh;
+                padding: 6px;
+                border-radius: 1.15rem;
+            }
+            #hero-slider-track > div { border-radius: .8rem; }
+            #hero-slider-track img { border-radius: .65rem; }
+            #hero-slider-container > button { width: 2.35rem; height: 2.35rem; }
+            #menu-grid { gap: .85rem; }
+            #menu-grid > div { border-radius: 1rem; }
+            #menu-grid > div > div:first-child > div:first-child { padding: .35rem; }
+            #menu-grid > div > div:first-child > div:nth-child(2) { padding: .8rem .8rem .65rem; }
+            #menu-grid > div > div:last-child { padding: 0 .8rem .85rem; gap: .5rem; }
+            #menu-grid h3 { font-size: .92rem; }
+            #menu-grid > div > div:last-child > span { font-size: 1rem; }
+            #menu-grid > div > div:last-child > button { padding: .55rem .65rem; }
             #scroll-top-btn { right: 1rem; bottom: 5.25rem; width: 2.75rem; height: 2.75rem; }
         }
 
@@ -373,39 +478,39 @@
 
                         <!-- Right Hero Image Showcase Slider Carousel -->
                         <div class="lg:col-span-5 relative">
-                            <div id="hero-slider-container" class="relative mx-auto w-full max-w-[560px] aspect-[3/4] min-h-[460px] max-h-[720px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white group bg-stone-950" onmouseenter="pauseHeroSlider()" onmouseleave="startHeroSlider()">
+                            <div id="hero-slider-container" class="relative mx-auto w-full max-w-[490px] aspect-[3/4] rounded-3xl overflow-hidden group" onmouseenter="pauseHeroSlider()" onmouseleave="startHeroSlider()">
                                 
                                 <!-- Slider Track / Wrapper -->
                                 <div id="hero-slider-track" class="w-full h-full flex transition-transform duration-700 ease-out">
                                     
                                     <!-- Slide 1 -->
                                     <div class="w-full h-full shrink-0 relative">
-                                        <img id="hero-menu-image-1" data-embedded-image="basreng" src="" alt="Poster menu Basreng Chili Oil Cafe Titik Kumpul" class="w-full h-full object-contain bg-stone-950">
+                                        <img id="hero-menu-image-1" data-embedded-image="basreng" src="" alt="Poster menu Basreng Chili Oil Cafe Titik Kumpul" class="w-full h-full object-contain">
                                     </div>
 
                                     <!-- Slide 2 -->
                                     <div class="w-full h-full shrink-0 relative">
-                                        <img id="hero-menu-image-2" data-embedded-image="otak" src="" alt="Poster menu Otak-Otak Chili Oil Cafe Titik Kumpul" class="w-full h-full object-contain bg-stone-950">
+                                        <img id="hero-menu-image-2" data-embedded-image="otak" src="" alt="Poster menu Otak-Otak Chili Oil Cafe Titik Kumpul" class="w-full h-full object-contain">
                                     </div>
 
                                     <!-- Slide 3 -->
                                     <div class="w-full h-full shrink-0 relative">
-                                        <img id="hero-menu-image-3" data-embedded-image="mie" src="" alt="Poster menu Mie Nyemek Cafe Titik Kumpul" class="w-full h-full object-contain bg-stone-950">
+                                        <img id="hero-menu-image-3" data-embedded-image="mie" src="" alt="Poster menu Mie Nyemek Cafe Titik Kumpul" class="w-full h-full object-contain">
                                     </div>
 
                                     <!-- Slide 4 -->
                                     <div class="w-full h-full shrink-0 relative">
-                                        <img id="hero-menu-image-4" data-embedded-image="es" src="" alt="Poster menu Es Cemil Cafe Titik Kumpul" class="w-full h-full object-contain bg-stone-950">
+                                        <img id="hero-menu-image-4" data-embedded-image="es" src="" alt="Poster menu Es Cemil Cafe Titik Kumpul" class="w-full h-full object-contain">
                                     </div>
 
                                     <!-- Slide 5: Poster katalog menu lengkap -->
                                     <div class="w-full h-full shrink-0 relative">
-                                        <img id="hero-menu-image-5" data-embedded-image="allmenu" src="" alt="Poster katalog menu Warkop Titik Kumpul" class="w-full h-full object-contain bg-stone-950">
+                                        <img id="hero-menu-image-5" data-embedded-image="allmenu" src="" alt="Poster katalog menu Warkop Titik Kumpul" class="w-full h-full object-contain">
                                     </div>
 
                                     <!-- Slide 6: Paket Ayam Cabe Ijo -->
                                     <div class="w-full h-full shrink-0 relative">
-                                        <img id="hero-menu-image-6" data-embedded-image="ayamijo" src="" alt="Poster Paket Ayam Cabe Ijo Warkop Titik Kumpul" class="w-full h-full object-contain bg-stone-950">
+                                        <img id="hero-menu-image-6" data-embedded-image="ayamijo" src="" alt="Poster Paket Ayam Cabe Ijo Warkop Titik Kumpul" class="w-full h-full object-contain">
                                     </div>
 
                                 </div>
